@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 import { profile } from "@/data/profile";
 import { HudPanel } from "@/components/ui/HudPanel";
 import { GlowButton } from "@/components/ui/GlowButton";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section id="hero" className="min-h-screen flex flex-col items-center justify-center relative px-6 pt-20">
       {/* Background Ambience */}
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-cyan-500/10 to-transparent pointer-events-none" />
-      
+
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Left Column: Visual & Stats */}
         <div className="lg:col-span-5 space-y-6">
@@ -23,7 +24,19 @@ export function Hero() {
               <div className="w-full h-full border-t-4 border-cyan-400 rounded-full" />
             </div>
             <div className="absolute inset-4 overflow-hidden rounded-full border border-white/10 bg-slate-900 flex items-center justify-center">
-               <span className="text-4xl font-mono text-cyan-500 font-bold group-hover:scale-110 transition-transform">KV</span>
+              {profile.avatarUrl && (
+                <Image
+                  src={profile.avatarUrl}
+                  alt="Avatar"
+                  width={220}
+                  height={220}
+                  className="rounded-full"
+                  priority
+                />
+              )}
+              {!profile.avatarUrl && (
+                <span className="text-4xl font-mono text-cyan-500 font-bold group-hover:scale-110 transition-transform">KV</span>
+              )}
             </div>
             {/* HUD Callout */}
             <div className="absolute -right-12 top-10 w-24 h-[1px] bg-cyan-400/50 hidden xl:block" />
@@ -46,14 +59,14 @@ export function Hero() {
         {/* Right Column: Title & Intro */}
         <div className="lg:col-span-7 space-y-8 text-center lg:text-left">
           <div className="space-y-4">
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               className="font-mono text-cyan-400 text-sm tracking-[0.4em] uppercase"
             >
               Principal Architect // Core Identity
             </motion.p>
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
@@ -61,7 +74,7 @@ export function Hero() {
             >
               {profile.name}
             </motion.h1>
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -77,8 +90,8 @@ export function Hero() {
             transition={{ delay: 0.4 }}
             className="flex flex-wrap gap-4 justify-center lg:justify-start"
           >
-            <GlowButton variant="primary" className="h-12 px-10">Initialize Connection</GlowButton>
-            <GlowButton variant="outline" className="h-12 px-10">Access Manifest Logs</GlowButton>
+            <GlowButton variant="primary" className="h-12 px-10" href="#contact">Initialize Connection</GlowButton>
+            <GlowButton variant="outline" className="h-12 px-10" href="#experience">Access Manifest Logs</GlowButton>
           </motion.div>
         </div>
       </div>
