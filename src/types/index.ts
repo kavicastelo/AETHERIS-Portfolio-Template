@@ -9,6 +9,9 @@ export interface SiteConfig {
   description: string;
   siteUrl: string;
   themeColor: string;
+  author: string[];
+  keywords: string[];
+  ogImage: string;
   navigation: NavItem[];
 }
 
@@ -32,6 +35,7 @@ export interface Profile {
   bio: string;
   avatarUrl: string;
   email: string;
+  whatsapp?: string;
   location: string;
   stats: Stat[];
   socials: SocialLink[];
@@ -54,7 +58,7 @@ export interface Project {
   longDescription?: string;
   image: string;
   tech: string[];
-  category: "AI" | "Web" | "Infra" | "OSS" | "Startup" | "Mobile";
+  category: "AI" | "Web" | "Infra" | "OSS" | "Startup" | "Mobile" | "Security" | "Systems";
   metrics?: { label: string; value: string }[];
   links: {
     github?: string;

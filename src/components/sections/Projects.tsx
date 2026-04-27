@@ -88,12 +88,12 @@ export function Projects() {
 
                   <div className="flex gap-4 pt-4 border-t border-white/5">
                     {project.links.github && (
-                      <a href={project.links.github} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                      <a href={project.links.github} aria-label={`View ${project.title} on GitHub`} className="text-slate-400 hover:text-cyan-400 transition-colors">
                         <GitBranch size={18} />
                       </a>
                     )}
                     {project.links.demo && (
-                      <a href={project.links.demo} className="text-slate-400 hover:text-cyan-400 transition-colors">
+                      <a href={project.links.demo} aria-label={`Live Demo of ${project.title}`} className="text-slate-400 hover:text-cyan-400 transition-colors">
                         <ExternalLink size={18} />
                       </a>
                     )}

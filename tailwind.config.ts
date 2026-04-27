@@ -19,6 +19,10 @@ export default {
           400: "var(--neon-magenta)",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+        heading: ["var(--font-outfit)", "ui-sans-serif", "system-ui"],
+      },
       animation: {
         "spin-slow": "spin 8s linear infinite",
         "float": "float 20s ease-in-out infinite",

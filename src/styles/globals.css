@@ -28,8 +28,13 @@
   --grid-size: 40px;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
-  @apply bg-background text-foreground overflow-x-hidden;
+  @apply bg-background text-foreground;
   font-family: 'Inter', sans-serif;
 }
 

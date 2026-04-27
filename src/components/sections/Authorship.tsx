@@ -26,6 +26,7 @@ export function Authorship() {
               <a 
                 href={item.link} 
                 className="inline-block text-[10px] font-mono tracking-[0.2em] text-cyan-400 hover:text-white transition-colors pt-4"
+                aria-label={`Read ${item.title}`}
               >
                 ACCESS_FULL_LOG [READ_ONLY] &rarr;
               </a>

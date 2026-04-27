@@ -2,39 +2,63 @@ import { Experience } from "@/types";
 
 export const experience: Experience[] = [
   {
-    company: "NEURAL CORE",
-    role: "Lead Systems Architect",
-    period: "2023 - PRESENT",
-    location: "Global / Remote",
+    company: "Talnova",
+    role: "Co-Founder & CEO",
+    period: "Oct 2024 - Present",
+    location: "Helsinki, Finland",
     description: [
-      "Architected a distributed AI inference engine handling 1M+ requests per hour with <50ms latency.",
-      "Led a team of 15 engineers in developing a multi-chain data synchronization protocol.",
-      "Implemented zero-knowledge proof infrastructure for secure data exchange across healthcare platforms.",
+      "Co-founded an international HR-tech startup delivering SaaS-based talent management and recruitment platforms.",
+      "Built and scaled a distributed team of 40+ members while overseeing product development and operations.",
+      "Expanded offerings into job boards, ATS tools, and education platforms while driving branding and global partnerships."
     ],
-    skills: ["Rust", "PyTorch", "Kubernetes", "gRPC", "Next.js"],
+    skills: ["Leadership", "Startup Management", "SaaS", "Product Development", "Team Building"]
   },
   {
-    company: "HYPERLINK LABS",
-    role: "Founder & CTO",
-    period: "2020 - 2023",
-    location: "Austin, TX",
+    company: "SPARKC",
+    role: "Development Team Lead",
+    period: "Feb 2024 - Oct 2024",
+    location: "Sri Lanka (Remote)",
     description: [
-      "Built and scaled a low-code platform for automated infrastructure deployment, reaching $2M ARR.",
-      "Designed a real-time collaborative IDE used by 50k+ developers globally.",
-      "Secured $5M Seed funding and scaled the engineering team from 2 to 20.",
+      "Led a cross-functional team of 10+ members to build a scalable HR system from scratch.",
+      "Delivered a full-featured platform with modules like payroll, attendance, messaging, and social features.",
+      "Strengthened leadership, communication, and client collaboration across globally distributed teams."
     ],
-    skills: ["Go", "AWS", "Terraform", "React", "PostgreSQL"],
+    skills: ["Team Leadership", "Project Management", "SaaS Development", "Client Relations", "Agile"]
   },
   {
-    company: "QUANTUM SYSTEMS",
-    role: "Senior Software Engineer",
-    period: "2018 - 2020",
-    location: "New York, NY",
+    company: "Career Break",
+    role: "Professional Development",
+    period: "May 2023 - Jan 2024",
+    location: "N/A",
     description: [
-      "Developed high-frequency trading algorithms with sub-microsecond execution times.",
-      "Optimized legacy C++ codebase, resulting in a 40% reduction in memory overhead.",
-      "Mentored junior engineers and established CI/CD best practices.",
+      "Took an intentional break to focus on personal growth, education, and skill development.",
+      "Earned certifications and strengthened technical foundations for future roles.",
+      "Reflected on past experiences to prepare for stronger career progression."
     ],
-    skills: ["C++", "Python", "Linux Kernel", "Docker"],
+    skills: ["Self-Development", "Learning", "Certifications", "Career Planning"]
   },
+  {
+    company: "Flexiart IT Solutions",
+    role: "Founder and Software Engineer",
+    period: "Feb 2022 - Apr 2023",
+    location: "Sri Lanka (Remote)",
+    description: [
+      "Founded and managed a small IT team delivering web, mobile, and design solutions.",
+      "Handled client communication, team coordination, and project execution end-to-end.",
+      "Gained hands-on experience in entrepreneurship, leadership, and business operations."
+    ],
+    skills: ["Entrepreneurship", "Web Development", "Mobile Development", "Client Management", "Leadership"]
+  },
+  {
+    company: "Fiverr",
+    role: "App Development & Graphic Designing",
+    period: "2021 - 2023",
+    location: "Remote",
+    description: [
+      "Delivered graphic design and web development services to global clients.",
+      "Specialized in branding assets like logos, brochures, and creative visual content.",
+      "Built full-stack solutions for small to mid-sized businesses while managing timelines and expectations."
+    ],
+    skills: ["Graphic Design", "Full-Stack Development", "Web Development", "Client Management", "Branding"]
+  }
 ];
